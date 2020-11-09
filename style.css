@@ -87,11 +87,11 @@ a {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
-//
-.title {
-    font-family: 'Metal Mania', cursive;
-    display: grid;
+
+#quiz-title {
+    padding: 2.5rem;
     text-align: center;
+    
 }
 
 .main-box {
@@ -141,12 +141,15 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 #end-btn {
     background-color: rgb(44, 139, 44);
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
     height: 50px;
     width: 100px;
     border: 3px solid green;
