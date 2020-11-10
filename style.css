@@ -21,6 +21,7 @@ body
     background-image: url("../img/retro.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    align-items: center;
 }
 
 .title-box 
@@ -29,13 +30,44 @@ body
     margin-top: 5%;
 }
   
-#start-btn
+.start-btn
 {
-    position: absolute;
+    position: fixed;
     bottom: 5%;
-    margin:0 auto;
-    display:block;
-    background: lawngreen;
+    width: 100vw;
+    
 }
 
+.btn-style
+{
+    background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  animation: glowing 1300ms infinite;
+}
 
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+}
+
+animation: glowing 1300ms infinite;
