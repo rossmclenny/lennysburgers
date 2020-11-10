@@ -1,9 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+<<<<<<< HEAD
 *
 {
     padding: 0;
     margin: 0;
+=======
+* {
+    background: black;
+    color: whitesmoke;
+    font-family: 'Metal Mania', cursive;
+}
+
+.intro-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a {
+    color: whitesmoke;
+}
+
+/* button */
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+>>>>>>> 624b207330da8d703edab003bd54eafac48d7173
 }
 
 body
@@ -24,6 +91,7 @@ body
     align-items: center;
 }
 
+<<<<<<< HEAD
 .title-box 
 {
     text-align: center;
@@ -45,6 +113,55 @@ body
   border-radius: 60px;
   border: none;
   color: #eeeeee;
+=======
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+#quiz-title {
+    padding: 2.5rem;
+    text-align: center;
+    
+}
+
+.main-box {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    background: black;
+}
+
+.question h2 {
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 2.5px;
+}
+
+.answer-button img {
+    width: 75%;
+    box-shadow: 0 0 20px whitesmoke;
+}
+
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+>>>>>>> 624b207330da8d703edab003bd54eafac48d7173
   cursor: pointer;
   display: inline-block;
   
@@ -55,6 +172,7 @@ body
   animation: glowing 1300ms infinite;
 }
 
+<<<<<<< HEAD
 @keyframes glowing {
   0% {
     background-color: #2ba805;
@@ -68,5 +186,29 @@ body
     background-color: #2ba805;
     box-shadow: 0 0 3px #2ba805;
   }
+=======
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  box-shadow: 0 0 20px lime;
+}
+
+.end-quiz {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#end-btn {
+    background-color: rgb(44, 139, 44);
+    cursor: pointer;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    height: 50px;
+    width: 100px;
+    border: 3px solid green;
+    font-size: 1rem;
+>>>>>>> 624b207330da8d703edab003bd54eafac48d7173
 }
 
