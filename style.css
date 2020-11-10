@@ -35,7 +35,7 @@ body
     position: fixed;
     bottom: 5%;
     width: 100vw;
-    
+    margin-left: 22.5%;
 }
 
 .btn-style
@@ -69,6 +69,23 @@ body
     background-color: #2ba805;
     box-shadow: 0 0 3px #2ba805;
   }
-=======
+}
+
+.container-game
+{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid lawngreen;
+    align-items: center;
+}
+
+.game-header
+{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    margin-top: 1%;
+    border-bottom: 1px solid lawngreen;
+}
 
 
