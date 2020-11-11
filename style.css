@@ -13,7 +13,7 @@ body
     font-family: 'Press Start 2P', cursive;
 }
 
-.container 
+.main
 {
     width: 100vw;
     height: 100vh;
@@ -29,13 +29,15 @@ body
     text-align: center;
     margin-top: 5%;
 }
-  
+
+.row {
+    justify-content: center;
+}
+
 .start-btn
 {
     position: fixed;
     bottom: 5%;
-    width: 100vw;
-    margin-left: 22.5%;
 }
 
 .btn-style
@@ -71,7 +73,7 @@ body
   }
 }
 
-.container-game
+.main-game
 {
     width: 100vw;
     height: 100vh;
@@ -79,7 +81,12 @@ body
     align-items: center;
 }
 
-.game-header
+.quiz-body
+{
+    margin-top: 2.5rem;
+}
+
+#game-header
 {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -88,4 +95,23 @@ body
     border-bottom: 1px solid lawngreen;
 }
 
+.question-style
+{
+    margin-top: 2.5rem;
+    align-items: center;
+    text-align: center;
+    column-gap: 5rem;
+    color: lawngreen;
+}
+
+.question-2 
+{
+    margin-top: 2.5rem;
+}
+
+.answer-style
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
 

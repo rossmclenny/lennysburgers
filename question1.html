@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-game">
-        <div class="game-header">
+    <div class="main-game">
+        <div id="game-header">
             <div class="title-box-game">
                     <h2>Level One</h2>
             </div>
@@ -20,8 +20,40 @@
             <div class="lives">
                     <h2>Credit:</h2>
             </div>
-        </div>
-        
+        </div>           
+            <div class="quiz-body">
+                <form class="level-one-qs">
+                    <div class="question-style">
+                        <div class="question-1">
+                            <p><strong>Q1</strong>: Yoshi first appeared in which Mario Brothers Game?</p><br>
+                                <div class="answer-style">
+                                    <label>
+                                        <input type="radio" name="q1" value="Super Mario Brothers">Super Mario Brothers</label>
+                                    <label>
+                                        <input type="radio" name="q1" value="Super Mario Brothers II">Super Mario Brothers II</label>
+                                    <label>
+                                        <input type="radio" name="q1" value="Super Mario Brothers III">Super Mario Brothers III</label>
+                                    <label>
+                                        <input type="radio" name="q1" value="Super Mario World">Super Mario World</label>
+                                </div>
+                        </div>
+                        <div class="question-2">
+                                <p><strong>Q2</strong>: What is the alternative name for the Super Nintendo?</p><br>
+                                <div class="answer-style">
+                                    <label>
+                                        <input type="radio" name="q2" value="MegaDrive">MegaDrive</label>
+                                    <label>
+                                        <input type="radio" name="q2" value="Saturn">Saturn</label>
+                                    <label>
+                                        <input type="radio" name="q2" value="C64">C64</label>
+                                    <label>
+                                        <input type="radio" name="q2" value="Famicom">Famicom</label>
+                                </div>
+                        </div>
+                    </div>
+                    <input type="button" name="" value="I am done!" onclick="check()">
+                </form>
+            </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
