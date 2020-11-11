@@ -22,37 +22,59 @@
             </div>
         </div>           
             <div class="quiz-body">
-                <form class="level-one-qs">
-                    <div class="question-style">
-                        <div class="question-1">
-                            <p><strong>Q1</strong>: Yoshi first appeared in which Mario Brothers Game?</p><br>
-                                <div class="answer-style">
-                                    <label>
-                                        <input type="radio" name="q1" value="Super Mario Brothers">Super Mario Brothers</label>
-                                    <label>
-                                        <input type="radio" name="q1" value="Super Mario Brothers II">Super Mario Brothers II</label>
-                                    <label>
-                                        <input type="radio" name="q1" value="Super Mario Brothers III">Super Mario Brothers III</label>
-                                    <label>
-                                        <input type="radio" name="q1" value="Super Mario World">Super Mario World</label>
+                <div class="question">
+                    <h4 class="question-text">What game did Yoshi first appear?</h4>
+                        <form class="level-one-as">
+                            <ul class="question-1">
+                                <li>
+                                    <input type="radio" id="Super Mario Brothers" value="Super Mario Brothers" name="q1" onclick="changeColor()" />
+                                    <label for="Super Mario Brothers">Super Mario Brothers</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Super Mario Brothers II" value="Super Mario Brothers II" name="q1" onclick="changeColor()"/>
+                                    <label for="Super Mario Brothers">Super Mario Brothers II</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Super Mario Brothers III" value="Super Mario Brothers III" name="q1" onclick="changeColor()"/>
+                                    <label for="Super Mario Brothers">Super Mario Brothers III</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Super Mario World" value="Super Mario World" name="q1" onclick="changeColor()"/>
+                                    <label for="Super Mario World">Super Mario World</label>
+                                </li>
+                                </ul>
+                            
+                       </form>
+                </div>
+                <div class="question">
+                    <h4 class="question-text">What was the Super Nintendo also know as?</h4>
+                        <form class="level-one-as">
+                            <ul class="question-1">
+                                <li>
+                                    <input type="radio" id="Famicom" name="q2" onclick="changeColor()" />
+                                    <label for="Famicom">Famicom</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Saturn" name="q2" onclick="changeColor()"/>
+                                    <label for="Saturn">Saturn</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Megadrive" name="q2" onclick="changeColor()"/>
+                                    <label for="Megadrive">Megadrive</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="Amiga" name="q2" onclick="changeColor()"/>
+                                    <label for="Amiga">Amiga</label>
+                                </li>
+                                </ul>
+                                <div class="end-quiz">
+                                    <input id="end-btn" type="button" name="" value="I am done!" onclick="check()">
                                 </div>
-                        </div>
-                        <div class="question-2">
-                                <p><strong>Q2</strong>: What is the alternative name for the Super Nintendo?</p><br>
-                                <div class="answer-style">
-                                    <label>
-                                        <input type="radio" name="q2" value="MegaDrive">MegaDrive</label>
-                                    <label>
-                                        <input type="radio" name="q2" value="Saturn">Saturn</label>
-                                    <label>
-                                        <input type="radio" name="q2" value="C64">C64</label>
-                                    <label>
-                                        <input type="radio" name="q2" value="Famicom">Famicom</label>
-                                </div>
-                        </div>
-                    </div>
-                    <input type="button" name="" value="I am done!" onclick="check()">
-                </form>
+
+<div id="myModal" style="display: none;">
+</div>
+                       </form>
+                </div>              
             </div>
     </div>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
