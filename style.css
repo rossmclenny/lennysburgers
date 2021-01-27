@@ -6,4 +6,11 @@
     font-family: 'Arvo', serif;
 }
 
+.container {
+    margin-top: 10px;
+}
 
+.btn {
+    background-color: red;
+    border-radius: 10px;
+}
