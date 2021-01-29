@@ -6,11 +6,37 @@
     font-family: 'Arvo', serif;
 }
 
-.container {
-    margin-top: 10px;
+.just-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid red;
+    border-radius: 1rem;
+}
+
+.just-container h2 {
+    font-size: 2rem;
+}
+
+.just-col {
+    text-align: center;
+    margin: auto;
+}
+
+.my-col {
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+}
+
+.my-col img {
+    height: 100%;
 }
 
 .btn {
     background-color: red;
     border-radius: 10px;
+}
+
+.main-col img {
+    width: 100%;
 }
