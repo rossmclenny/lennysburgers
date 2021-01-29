@@ -6,6 +6,10 @@
     font-family: 'Arvo', serif;
 }
 
+a.nav-link {
+    text-align: center;
+}
+
 .just-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -22,19 +26,15 @@
     margin: auto;
 }
 
-.my-col {
-    text-align: center;
-    margin: auto;
-    color: whitesmoke;
+.col.main-col {
+    background-color: #343c44;
+    color: white;
 }
 
-.my-col img {
-    height: 100%;
-}
 
 @media (max-width: 768px) {
     .main-col {
-        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
