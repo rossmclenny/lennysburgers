@@ -6,9 +6,17 @@
     font-family: 'Arvo', serif;
 }
 
+
+
 a.nav-link {
     text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    color: white;
 }
+
+
 
 .just-container {
     margin-top: 2rem;
@@ -31,18 +39,31 @@ a.nav-link {
     color: white;
 }
 
-
 @media (max-width: 768px) {
     .main-col {
         margin-bottom: 2rem;
     }
 }
 
-.btn {
-    background-color: red;
-    border-radius: 10px;
+.main-col {
+    text-align: center;
 }
 
 .main-col img {
     width: 100%;
 }
+
+.row.main-row-2 {
+    background-color: #343c44;
+    border-radius: 1rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.col-md-4.main-col {
+    margin: auto;
+}
+.col-md-8.main-col {
+    margin: auto;
+}
+
