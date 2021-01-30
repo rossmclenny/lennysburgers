@@ -6,14 +6,35 @@
     font-family: 'Arvo', serif;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+/*
+.navbar-dark .navbar-nav .nav-link:hover {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+*/
 
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
 
 a.nav-link {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
-    color: white;
 }
 
 
@@ -40,8 +61,8 @@ a.nav-link {
 }
 
 @media (max-width: 768px) {
-    .main-col {
-        margin-bottom: 2rem;
+    .col-md-6.main-col img {
+        margin-top: 2rem;
     }
 }
 
@@ -67,10 +88,19 @@ a.nav-link {
     margin: auto;
 }
 
-/* menu */
-
-.menu-container {
+/* desk menu container */
+.container.menu-title {
     margin-top: 2rem;
+    padding-top: 1rem;
+    background: #f45454;
+    border-radius: 2rem;
+    color: white;
+    text-align: center;
+}
+
+
+.desk-menu-container {
+    padding-bottom: 2rem;
 }
 
 .single-content {
@@ -82,14 +112,12 @@ a.nav-link {
 .single-content > img {
     width: 100%;
 }
-
 .single-content .text-content,
 .single-content::after {
     position: absolute;
     left: 20px;
     right: 20px;
 }
-
 .single-content:after{
     content: '';
     display: block;
@@ -100,12 +128,10 @@ a.nav-link {
     transform: rotate3d(-1,1,0,100deg);
     transition: .4s;
 }
-
 .single-content:hover:after {
     opacity: .9;
     transform: rotate3d(0,0,0,0deg);
 }
-
 .text-content {
     top: 45%;
     opacity: 0;
@@ -115,9 +141,28 @@ a.nav-link {
     text-align: center;
     color: white;
 }
-
 .single-content:hover .text-content {
     opacity: 1;
     transform: translate(0, -50%);
     transition-delay: .3s;
+}
+
+/* mobile menu container */
+
+.mobile-menu-container {
+    margin-top: 2rem;
+}
+.mobile-col {
+    text-align: center;
+}
+
+
+    @media all and (min-width: 480px) {
+    .desk-menu-container {display:block;}
+    .mobile-menu-container {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .desk-menu-container {display:none;}
+    .mobile-menu-container {display:block;}
 }
