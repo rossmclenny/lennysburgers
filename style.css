@@ -107,6 +107,7 @@ a.nav-link {
     position: relative;
     transition: .3s;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
 }
 
 .single-content > img {
@@ -121,7 +122,7 @@ a.nav-link {
 .single-content:after{
     content: '';
     display: block;
-    background: crimson;
+    background: #f45454;
     top: 20px;
     bottom: 20px;
     opacity: 0;
@@ -156,8 +157,25 @@ a.nav-link {
     text-align: center;
 }
 
+/* back to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #f45454;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
-    @media all and (min-width: 480px) {
+
+@media all and (min-width: 480px) {
     .desk-menu-container {display:block;}
     .mobile-menu-container {display:none;}
 }
