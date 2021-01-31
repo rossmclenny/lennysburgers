@@ -183,11 +183,23 @@ a.nav-link {
 }
 .col-md-6.contact-col {
     border-right: 2px solid white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .contact-col .inner-text {
-    padding-top: 30%;
+    padding-top: 35%;
 }
-
+.form-group textarea {
+    width: 100%;
+}
+button.submit-btn {
+    background: white;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+button.submit-btn:hover {
+    background: #f45454;
+}
 
 
 @media all and (min-width: 480px) {
@@ -198,4 +210,10 @@ a.nav-link {
 @media all and (max-width: 479px) {
     .desk-menu-container {display:none;}
     .mobile-menu-container {display:block;}
+}
+
+@media (max-width: 767px) {
+    .contact-col .inner-text {
+        padding-top: 2rem;
+    }
 }
